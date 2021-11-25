@@ -3,7 +3,7 @@ import parser from './parser';
 function flowdockMention(tokens, idx) {
   var tag = tokens[idx].content;
   var markup = tokens[idx].markup;
-  return '<a class="mention" href="https://twitter.com/' + tag + '">' + markup + tag + '</a>';
+  return '<a class="mention" target="_blank" href="https://twitter.com/' + tag + '">' + markup + tag + '</a>';
 }
 
 export default function(md, options) {

@@ -6,7 +6,7 @@ forked from https://github.com/flowdock/markdown-it-flowdock
 
 > flowdock hashtag (`#tag`), mentions (`@user`) and relaxed autolink plugin for [markdown-it](https://github.com/markdown-it/markdown-it) markdown parser.
 
-* `@user` => `<a class="mention" href="https://twitter.com/user">@user</a>`
+* `@user` => `<a class="mention" href="https://twitter.com/user" target="_blank">@user</a>`
 * `#hashtag` => `<span class="hashtag">#hashtag</span>`
 
 ## Install
@@ -19,7 +19,7 @@ npm install markdown-it-twitter --save
 var md = require('markdown-it')().use(require('markdown-it-twitter'));
 
 md.render('Test #hashtag @user'); 
-// 'Test <a class="hashtag">#hashtag</a> <span class="mention" href="https://twitter.com/user">@user</span>'
+// 'Test <span class="hashtag">#hashtag</span> <a class="mention" href="https://twitter.com/user" target="_blank">@user</a>'
 ```
 
 ## Tests

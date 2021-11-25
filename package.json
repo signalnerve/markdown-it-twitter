@@ -1,6 +1,6 @@
 {
   "name": "markdown-it-twitter",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Twitter mentions and hashtag links in markdown-it",
   "author": "Kristian Freeman <kristian@kristianfreeman.com>",
   "keywords": [
