@@ -8,7 +8,6 @@ forked from https://github.com/flowdock/markdown-it-flowdock
 
 * `@user` => `<a class="mention" href="https://twitter.com/user">@user</a>`
 * `#hashtag` => `<span class="hashtag">#hashtag</span>`
-* `https://github.com/flowdock/markdown-it-flowdock` => `<a href="https://github.com/flowdock/markdown-it-flowdock">https://github.com/flowdock/markdown-it-flowdock</a>`
 
 ## Install
 
@@ -18,7 +17,9 @@ npm install markdown-it-twitter --save
 
 ```js
 var md = require('markdown-it')().use(require('markdown-it-twitter'));
-md.render('Test #hashtag @user'); // => 'Test <a class="hashtag">#hashtag</a> <span class="mention" href="https://twitter.com/user">@user</span>'
+
+md.render('Test #hashtag @user'); 
+// 'Test <a class="hashtag">#hashtag</a> <span class="mention" href="https://twitter.com/user">@user</span>'
 ```
 
 ## Tests
