@@ -1,24 +1,24 @@
-# markdown-it-flowdock
+# markdown-it-twitter
 
-[![Build Status](https://travis-ci.org/flowdock/markdown-it-flowdock.svg)](https://travis-ci.org/flowdock/markdown-it-flowdock)
+very wip markdown parsing for twitter hashtags/mentions
+
+forked from https://github.com/flowdock/markdown-it-flowdock
 
 > flowdock hashtag (`#tag`), mentions (`@user`) and relaxed autolink plugin for [markdown-it](https://github.com/markdown-it/markdown-it) markdown parser.
 
-* `@user` => `<a class="mention">@user</a>`
-* `#hashtag` => `<a class="hashtag">#hashtag</a>`
+* `@user` => `<a class="mention" href="https://twitter.com/user">@user</a>`
+* `#hashtag` => `<span class="hashtag">#hashtag</span>`
 * `https://github.com/flowdock/markdown-it-flowdock` => `<a href="https://github.com/flowdock/markdown-it-flowdock">https://github.com/flowdock/markdown-it-flowdock</a>`
 
 ## Install
 
-node.js:
-
 ```bash
-npm install markdown-it-flowdock --save
+npm install markdown-it-twitter --save
 ```
 
 ```js
-var md = require('markdown-it')().use(require('markdown-it-flowdock'));
-md.render('Test #hahstag @user'); // => 'Test <a class="hashtag">#hashtag</a> <a class="mention">@user</a>'
+var md = require('markdown-it')().use(require('markdown-it-twitter'));
+md.render('Test #hashtag @user'); // => 'Test <a class="hashtag">#hashtag</a> <span class="mention" href="https://twitter.com/user">@user</span>'
 ```
 
 ## Tests

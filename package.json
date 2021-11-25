@@ -1,20 +1,20 @@
 {
-  "name": "markdown-it-flowdock",
-  "version": "0.3.8",
-  "description": "Flowdock hashtag and mention parser for markdown-it",
-  "author": "Ville Lautanala <lautis@gmail.com>",
+  "name": "markdown-it-twitter",
+  "version": "0.0.1",
+  "description": "Twitter mentions and hashtag links in markdown-it",
+  "author": "Kristian Freeman <kristian@kristianfreeman.com>",
   "keywords": [
     "markdown-it-plugin",
     "markdown-it",
-    "flowdock"
+    "twitter"
   ],
-  "homepage": "https://github.com/flowdock/markdown-it-flowdock",
+  "homepage": "https://github.com/signalnerve/markdown-it-twitter",
   "repository": {
     "type": "git",
-    "url": "git://github.com/flowdock/markdown-it-flowdock.git"
+    "url": "git://github.com/signalnerve/markdown-it-twitter.git"
   },
   "bugs": {
-    "url": "https://github.com/flowdock/markdown-it-flowdock/issues"
+    "url": "https://github.com/signalnerve/markdown-it-twitter/issues"
   },
   "license": "MIT",
   "main": "dist/index.js",

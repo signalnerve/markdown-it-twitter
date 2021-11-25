@@ -3,7 +3,7 @@ import parser from './parser';
 function flowdockHashtag(tokens, idx) {
   var tag = tokens[idx].content;
   var markup = tokens[idx].markup;
-  return '<a class="tag">' + markup + tag + '</a>';
+  return '<span class="hashtag">' + markup + tag + '</span>';
 }
 
 export default function(md, options) {
